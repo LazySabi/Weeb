@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.8" />
+    <title>My resume</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <div class="body-div">
+      <h1>My resume</h1>
+      <div class="resume-container">
+        <img src="./images/me.jpg" alt="me" width="200" height="200" />
+        <div class="text-container">
+          <h2>Kalynovska</h2>
+          <h3>Kateryna</h3>
+          <p>08.04.2005</p>
+        </div>
+      </div>
+
+      <!-- Навчання -->
+      <div>
+        <div>
+          <h3 class="h3-main">Education</h3>
+        </div>
+        <ul class="education-list">
+          <li>
+            <div>
+              <h4>National Univercity "Zaporizhzhya Polytechnic"</h4>
+              <h5>Computer Science and Technology</h5>
+              <p>2023-2027, Ukraine</p>
+            </div>
+          </li>
+          <li>
+            <div>
+              <h4>Zaporizhzhya secondary school №87</h4>
+              <h5>Grades 1 - 11</h5>
+              <p>2012-2023, Ukraine</p>
+            </div>
+          </li>
+        </ul>
+        <!-- Контакти -->
+        <div>
+          <ul>
+            <li>
+              <a href="mailto:katyasid.2016@gmail.com">
+                katyasid.2016@gmail.com
+              </a>
+            </li>
+            <li>
+              <a href="tel:380954392414"> +38(095)439-2414 </a>
+            </li>
+            <li>
+              <a href="https://t.me/LazyCheburek" target="_blank">
+                <svg width="24" height="24" class="soc-link-icon-telegram">
+                  <use href="./images/icons.svg#icon-Frame-3"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="https://x.com/Dendro_Bulichka" target="_blank">
+                <svg width="24" height="24" class="soc-link-icon-twitter">
+                  <use href="./images/icons.svg#icon-twitter-1"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/chebusus/" target="_blank">
+                <svg width="24" height="24" class="soc-link-icon-instagram">
+                  <use href="./images/icons.svg#icon-instagram-2"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <!-- Зв'язок зі мною -->
+        <form id="contactForm" novalidate>
+            <div class="form-group">
+                <label for="name">Ім’я:</label><br>
+                <input type="text" id="name" name="name" required>
+                <div id="nameError" class="error"></div>
+            </div>
+    
+            <div class="form-group">
+                <label for="email">Електронна пошта:</label><br>
+                <input type="email" id="email" name="email" required>
+                <div id="emailError" class="error"></div>
+            </div>
+    
+            <div class="form-group">
+                <label for="phone">Телефон:</label><br>
+                <input type="text" id="phone" name="phone" required>
+                <div id="phoneError" class="error"></div>
+            </div>
+    
+            <div class="form-group">
+                <label for="message">Текст повідомлення:</label><br>
+                <textarea id="message" name="message" rows="5" required></textarea>
+                <div id="messageLength">Довжина повідомлення: 0 символів</div>
+            </div>
+    
+            <button type="submit">Відправити</button>
+        </form>
+
+        <!-- Мої знання -->
+        <div>
+          <h3>Tech Skills</h3>
+          <ol>
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>GIT</li>
+            <li>Figma</li>
+          </ol>
+        </div>
+        <div>
+          <h3>Soft Skills</h3>
+          <ol>
+            <li>Scrum</li>
+            <li>Agile</li>
+            <li>GTD</li>
+            <li>Teamwork</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+    <p>
+      --------------------------------------------------------------------------
+    </p>
+    <a href="./pages/table.html">Я вмію створювати таблиці</a>
+    <p>
+      --------------------------------------------------------------------------
+    </p>
+    <a href="./pages/technowiki.html">Я вмію створювати Вікіпедію</a>
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,254 @@
+body {
+    margin: 0;
+    padding: 0;      
+    background: linear-gradient(0deg, rgb(13, 141, 51) 15%, rgb(10, 121, 43) 100%);
+    font-family: "Montserrat", sans-serif;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+.main-header {
+    margin: 0;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(10, 121, 43);
+  }
+
+.menu-list {
+    display: flex; 
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+.menu-item {
+    margin-right: 20px; 
+    flex-grow: 1;
+    text-align: center;
+}
+
+.menu ul li:last-child {
+    margin-right: 0; 
+}
+
+.menu-link {
+    display: block; 
+    padding: 20px 0; 
+    text-decoration: none;
+    color: #000; 
+    font-size: 20px;
+    font-weight: bold; 
+}
+
+.here-now {
+    background-color: rgb(8, 100, 36);
+}
+
+.resume-container {
+    display: flex;
+    align-items: center;
+    margin: 20px 20px;
+  }
+  
+  .text-container {
+    margin-left: 20px;
+  }
+
+  .body-div {
+    background-color: rgba(255, 255, 255, 0.507);
+    border-radius: 30px;
+    padding: 20px 20px;
+  }
+
+.href-list {
+    text-decoration: none;
+    color: black;
+}
+
+.href-list:hover {
+    color: #167e0d;
+}
+
+.first .second {
+    margin-left: 4mm;
+}
+
+.first .second .third {
+    margin-left: 8mm;
+}
+
+.information-container-small {
+    margin-left: 2mm;
+}
+
+.information-container-smaler {
+    margin-left: 4mm;
+}
+
+footer {
+    background-color: rgb(13, 141, 51);
+}
+
+.footer-link {
+    display: block; 
+    padding: 20px 0; 
+    margin-left: 8px;
+    text-decoration: none;
+    color: #000000; 
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.footer-link:hover {
+    color: #06b7c4;
+}
+
+main {
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+/* Стилі бургеру */
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 999;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .overlay.active {
+    display: flex;
+  }
+  
+  .overlay-menu {
+    text-align: center;
+  }
+  
+  .overlay-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .overlay-list li {
+    margin: 15px 0;
+  }
+  
+  .overlay-list a {
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  .overlay-list a:hover {
+    color: #15c733;
+  }
+  
+  /* Бургер-меню */
+  .burger {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+  }
+  
+  .burger span {
+    display: block;
+    height: 3px;
+    background-color: black; 
+    border-radius: 2px;
+    transition: all 0.3s ease;
+  }
+  
+  
+  .burger span:nth-child(1),
+  .burger span:nth-child(2),
+  .burger span:nth-child(3) {
+    background-color: black; 
+  }
+  
+  
+  .burger.active span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+    background-color: white; 
+  }
+  
+  .burger.active span:nth-child(2) {
+    opacity: 0;
+    background-color: white; 
+  }
+  
+  .burger.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+    background-color: white; 
+  }
+  
+  
+  .burger span:nth-child(1),
+  .burger span:nth-child(2),
+  .burger span:nth-child(3) {
+    background-color: black; 
+  }
+  
+  @media screen and (max-width: 1050px) {
+    .burger {
+      display: flex;
+    }
+  
+    .menu-list {
+      display: none;
+    }
+  
+    .body-div {
+      background-color: rgba(255, 255, 255, 0.507);
+      border-radius: 30px;
+      padding: 20px 20px;
+      margin-top: 50px;
+    }
+  
+  }
+  
+  @media (max-width: 550px) {
+    .resume-container {
+      flex-direction: column; 
+      align-items: center;    
+    }
+  
+    .text-container {
+      margin-left: 0;         
+      text-align: center;     
+    }
+  
+    img {
+      width: 100%;            
+      max-width: 200px;      
+      height: auto;           
+    }
+  }
